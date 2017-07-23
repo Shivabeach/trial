@@ -1,0 +1,12 @@
+{
+  "name": "trial",
+  "version": "2.1.0",
+  "description": "trial DNA pages",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brad VH <mrwilson1@comcast.net>",
+  "license": "ISC",
+  "dependencies": {}
+}
