@@ -1,7 +1,4 @@
 button, [type='button'], [type='reset'], [type='submit'] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   background-color: #1565c0;
   border: 0;
   border-radius: 3px;
@@ -58,9 +55,6 @@ textarea {
   font-size: 1em; }
 
 [type='color'], [type='date'], [type='datetime'], [type='datetime-local'], [type='email'], [type='month'], [type='number'], [type='password'], [type='search'], [type='tel'], [type='text'], [type='time'], [type='url'], [type='week'], input:not([type]), textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 3px;
@@ -208,6 +202,7 @@ hr {
 
 /* My stuff starts here */
 body {
+  background: #E0C073;
   overflow: auto;
   margin: 0;
   min-height: 100vh;
@@ -224,7 +219,23 @@ body {
   color: #333;
   vertical-align: baseline; }
 
-#layout-containers-main {
+.m-post-display-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #AEAB8A; }
+  .m-post-display-wrapper--card {
+    margin: 2em;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 0;
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0; }
+  .m-post-display-wrapper--title {
+    color: #ccac00;
+    height: 2em; }
+
+#l-containers-main {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -235,27 +246,27 @@ body {
   -ms-flex-flow: wrap row;
   flex-flow: wrap row; }
 
-#layout-headers-top {
+#l-headers-main {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 0;
   -ms-flex: 1 1 0px;
   flex: 1 1 0;
   min-height: 5em; }
 
-#layout-footers-footer {
+#l-footers-main {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 0;
   -ms-flex: 1 1 0px;
   flex: 1 1 0;
   min-height: 5em; }
 
-#layout-flex-items-left {
+#l-flex-items-left {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 0;
   -ms-flex: 1 1 0px;
   flex: 1 1 0; }
 
-#layout-flex-items-right {
+#l-flex-items-right {
   -webkit-box-flex: 2;
   -webkit-flex: 2 1 0;
   -ms-flex: 2 1 0px;
