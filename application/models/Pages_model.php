@@ -1,21 +1,18 @@
 <?php
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Pages extends CI_Controller
+class Pages_model extends CI_Model
 {
 
   public function __construct()
   {
     parent::__construct();
-
-  }
-
-  public function index()
-  {
-    
+    //Codeigniter : Write Less Do More
   }
 
 
 
 
-} //end of file
+
+
+} //end of file Pages_model.php
