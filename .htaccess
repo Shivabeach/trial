@@ -11,66 +11,11 @@ RewriteCond %{SCRIPT_FILENAME} -d [OR]
 RewriteCond %{SCRIPT_FILENAME} -f
 RewriteRule "(^|/)\." - [F]
 
-RewriteCond %{HTTPS} !on
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
-
-# added the above. remove if it doesnt work
-
-<FilesMatch ".*">
-    Require ip 192.88.134.0/23
-    Require ip 185.93.228.0/22
-    Require ip 2a02:fe80::/29
-    Require ip 66.248.200.0/22
-</FilesMatch>
-
-<IfModule mod_headers.c>
-     Header set X-Frame-Options "DENY"
-     <FilesMatch "\.(appcache|atom|crx|css|cur|eot|f4[abpv]|flv|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|tt[cf]|vcf|vtt|webapp|web[mp]|woff|xml|xpi)$">
-
-         Header unset X-Frame-Options
-
-     </FilesMatch>
-
- </IfModule>
-
 <IfModule mod_autoindex.c>
     #Options -Indexes
 </IfModule>
 
-<FilesMatch "(^#.*#|\.(bak|config|dist|fla|in[ci]|log|psd|sh|sql|sw[op])|~)$">
-
-#
-
-    # Apache < 2.3
-
-    <IfModule !mod_authz_core.c>
-       Order allow,deny
-        Deny from all
-       Satisfy All
-   </IfModule>
-
-    # Apache ≥ 2.3
-    <IfModule mod_authz_core.c>
-        Require all denied
-    </IfModule>
-</FilesMatch>
-
-<IfModule mod_headers.c>
-    Header set X-Content-Type-Options "nosniff"
-</IfModule>
-
-<IfModule mod_headers.c>
-     # (1)    (2)
-
-     Header set X-XSS-Protection "1; mode=block"
-
-     <FilesMatch "\.(appcache|atom|crx|css|cur|eot|f4[abpv]|flv|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|tt[cf]|vcf|vtt|webapp|web[mp]|woff|xml|xpi)$">
-
-         Header unset X-XSS-Protection
-     </FilesMatch>
- </IfModule>
- 
- <IfModule mod_deflate.c>
+<IfModule mod_deflate.c>
     # Force compression for mangled headers.
     # http://developer.yahoo.com/blogs/ydn/posts/2010/12/pushing-beyond-gzipping
     <IfModule mod_setenvif.c>
@@ -181,12 +126,3 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
 
     ExpiresByType image/svg+xml                         "access plus 1 month"
 </IfModule>
-
-
-<Files 403.shtml>
-
-order allow,deny
-
-allow from all
-
-</Files>

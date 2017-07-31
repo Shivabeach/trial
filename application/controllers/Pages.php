@@ -12,7 +12,11 @@ class Pages extends CI_Controller
 
   public function index()
   {
-    
+    $data['title'] = "Page 1";
+    $data["head"] = "Page One";
+    $this->load->view("header/header", $data);
+    $this->load->view("pages/prime", $data);
+    $this->load->view("footer/footer");
   }
 
 

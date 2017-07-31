@@ -1,3 +1,4 @@
+/* Smartphones (portrait and landscape) ----------- */
 button, [type='button'], [type='reset'], [type='submit'] {
   background-color: #1565c0;
   border: 0;
@@ -177,7 +178,6 @@ h4,
 h5,
 h6 {
   font-family: "Garamond", "Baskerville", "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-  font-size: 1.25em;
   line-height: 1.2;
   margin: 0 0 0.75em; }
 
@@ -202,7 +202,6 @@ hr {
 
 /* My stuff starts here */
 body {
-  background: #E0C073;
   overflow: auto;
   margin: 0;
   min-height: 100vh;
@@ -217,7 +216,94 @@ body {
   transition: all 300ms ease;
   font-size: calc(18px + 0.25vw);
   color: #333;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  background: -webkit-linear-gradient(55deg, #FFB27A, #FFF7BE);
+  background: -o-linear-gradient(55deg, #FFB27A, #FFF7BE);
+  background: linear-gradient(35deg, #FFB27A, #FFF7BE); }
+
+h1 {
+  font-size: 5.3vw; }
+
+h2 {
+  font-size: 1.95313em; }
+
+h3 {
+  font-size: 1.5625em; }
+
+h4 {
+  font-size: 1.25em; }
+
+h5 {
+  font-size: 1em; }
+
+h6 {
+  font-size: 0.64em; }
+
+[class*='col-'] {
+  width: 100%;
+  float: left;
+  min-height: 1px;
+  padding: 1em; }
+
+.col-1 {
+  width: 8.33333%;
+  min-height: 200px;
+  padding: 15px 10px; }
+
+.col-2 {
+  width: 16.66667%;
+  min-height: 200px;
+  padding: 15px 10px; }
+
+.col-3 {
+  width: 25%;
+  min-height: 200px;
+  padding: 15px 10px; }
+
+.col-4 {
+  width: 33.33333%;
+  min-height: 200px;
+  padding: 15px 10px; }
+
+.col-5 {
+  width: 41.66667%;
+  min-height: 200px;
+  padding: 15px 10px; }
+
+.col-6 {
+  width: 50%;
+  min-height: 200px;
+  padding: 15px 10px; }
+
+.col-7 {
+  width: 58.33333%;
+  min-height: 200px;
+  padding: 15px 10px; }
+
+.col-8 {
+  width: 66.66667%;
+  min-height: 200px;
+  padding: 15px 10px; }
+
+.col-9 {
+  width: 75%;
+  min-height: 200px;
+  padding: 15px 10px; }
+
+.col-10 {
+  width: 83.33333%;
+  min-height: 200px;
+  padding: 15px 10px; }
+
+.col-11 {
+  width: 91.66667%;
+  min-height: 200px;
+  padding: 15px 10px; }
+
+.col-12 {
+  width: 100%;
+  min-height: 200px;
+  padding: 15px 10px; }
 
 .m-post-display-wrapper {
   display: -webkit-box;
@@ -235,6 +321,26 @@ body {
     color: #ccac00;
     height: 2em; }
 
+.m-card-wrapper {
+  width: 95%;
+  margin: 10px auto;
+  background: #fff4a5;
+  border-radius: 10px; }
+  .m-card-wrapper--title {
+    color: purple;
+    font-size: 1.5625em; }
+  .m-card-wrapper--content {
+    font-size: 1em;
+    width: 94%;
+    margin: 0 auto; }
+  .m-card-wrapper--info {
+    width: 100%;
+    line-height: 1;
+    font-size: 0.8em;
+    padding: 5px 0; }
+  .m-card-wrapper--para {
+    background: #FFF7BE; }
+
 #l-containers-main {
   display: -webkit-box;
   display: -webkit-flex;
@@ -244,32 +350,56 @@ body {
   -webkit-box-direction: normal;
   -webkit-flex-flow: wrap row;
   -ms-flex-flow: wrap row;
-  flex-flow: wrap row; }
+  flex-flow: wrap row;
+  min-height: 100%; }
 
 #l-headers-main {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 0;
-  -ms-flex: 1 1 0px;
-  flex: 1 1 0;
-  min-height: 5em; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #AEAB8A;
+  min-height: 5em;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 #l-footers-main {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 0;
-  -ms-flex: 1 1 0px;
-  flex: 1 1 0;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #AEAB8A;
+  width: 100%;
   min-height: 5em; }
 
 #l-flex-items-left {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 0;
-  -ms-flex: 1 1 0px;
-  flex: 1 1 0; }
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 5px 1.5em;
+  border-right: 2px solid #AEAB8A; }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    #l-flex-items-left {
+      display: none; } }
+  @media screen and (max-width: 767px) {
+    #l-flex-items-left {
+      display: none; } }
 
 #l-flex-items-right {
-  -webkit-box-flex: 2;
-  -webkit-flex: 2 1 0;
-  -ms-flex: 2 1 0px;
-  flex: 2 1 0; }
+  -webkit-box-flex: 4;
+  -webkit-flex: 4;
+  -ms-flex: 4;
+  flex: 4; }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    #l-flex-items-right {
+      width: 100%; } }
 
 

@@ -1,7 +1,18 @@
 //primary partitions
 
 #l-flex-items-left
-  flex: 1 1 0
+  flex: 1
+  padding: 5px 1.5em
+  border-right: 2px solid $v-olive
+
+  +tablet
+    display: none
+
+  +mobile
+    display: none
 
 #l-flex-items-right
-  flex: 2 1 0
+  flex: 4
+
+  +tablet
+    width: 100%
