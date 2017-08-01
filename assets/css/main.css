@@ -323,8 +323,8 @@ h6 {
 
 .m-card-wrapper {
   width: 95%;
-  margin: 10px auto;
-  background: #fff4a5;
+  margin: 20px auto;
+  background: #75ffcc;
   border-radius: 10px; }
   .m-card-wrapper--title {
     color: purple;
@@ -339,7 +339,7 @@ h6 {
     font-size: 0.8em;
     padding: 5px 0; }
   .m-card-wrapper--para {
-    background: #FFF7BE; }
+    background: #C1FFE8; }
 
 #l-containers-main {
   display: -webkit-box;
