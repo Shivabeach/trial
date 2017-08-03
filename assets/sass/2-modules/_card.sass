@@ -1,13 +1,15 @@
 .m-card-wrapper
   width: 95%
   margin: 20px auto
-  background: darken($aero-blue, 15%)
+  background: lighten($almond, 4%)
+  box-shadow: 10px 10px 1px darken($almond,4%)
 
   +round(10px)
 
   &--title
     color: purple
     font-size: modular-scale(2)
+    padding-left: 10px
 
   &--content
     font-size: modular-scale(0)
@@ -18,7 +20,10 @@
     width: 100%
     line-height: 1
     font-size: modular-scale(-1)
-    padding: 5px 0
+    padding: 5px 10px
 
   &--para
-    background: $aero-blue
+    background: transparent
+
+  &--para:last-of-type
+    padding-bottom: 15px

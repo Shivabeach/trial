@@ -18,7 +18,7 @@
         ),
         array(
                 'name'    => 'keywords',
-                'content' => 'DNA, Ancestry, England, Germany, Norway, history, names, cousin, great-grandfather, mother, father, relatives, New Jersey, arrival, sailing ships, Sweden, hapalogs, haplogroup, STR, allele, SNP, ancestors, YSEQ'
+                'content' => 'DNA, Ancestry, England, Germany, Norway, history, names, cousin, great-grandfather, mother, father, relatives, New Jersey, arrival, sailing ships, Sweden, hapalogs, haplogroup, STR, allele, SNP, ancestors, YSEQ, Denmark'
         ),
         array(
                 'name'    => 'author',
@@ -33,6 +33,6 @@
     ?>
     <link rel="stylesheet" href="<?php echo base_url('assets/css/main.css');?>" media="screen">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css">
-    <link rel="stylesheet" href="<?php //echo base_url('assets/plugins/vert/vertical-tabs.css');?>">
+
     
   </head>
