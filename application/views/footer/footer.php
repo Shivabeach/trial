@@ -1,5 +1,36 @@
 <footer id="l-footers-main">
-<p>Content</p>
+<div class="m-boxes-box">
+  <ul class="m-boxes-link1">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Action</a></li>
+				<li><a href="#">Dollar</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+</div>
+<div class="m-boxes-box">
+  <ul class="m-boxes-link1">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Action</a></li>
+				<li><a href="#">Dollar</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+</div>
+<div class="m-boxes-box">
+  <ul class="m-boxes-link1">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Action</a></li>
+				<li><a href="#">Dollar</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+</div>
+<div class="m-boxes-box">
+  <ul class="m-boxes-link1 m-boxes-link2">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Action</a></li>
+				<li><a href="#">Dollar</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+</div>
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

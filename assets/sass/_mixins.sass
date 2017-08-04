@@ -2,26 +2,10 @@
   justify-content: $value
   align-items: $value2
 
-=align
-  justify-content: flex-end
-
 =border($width, $style, $color)
   border-width: $width
   border-style: $style
   border-color: $color
-
-/* Smartphones (portrait and landscape) ----------- */
-=desktop
-  @media screen and (min-width: $desktop)
-    @content
-
-=tablet
-  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px)
-    @content
-
-=mobile
-  @media screen and (max-width: $tablet - 1px)
-    @content
 
 =gradient($angle, $color, $color1)
   background: linear-gradient($angle, $color, $color1)
@@ -34,3 +18,17 @@
     > *
       &:nth-of-type(#{$i})
         background: mix($y, $x, 100% * $i/$c)
+
+
+/* Media calls */
+=desktop
+  @media screen and (min-width: $desktop)
+    @content
+
+=tablet
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px)
+    @content
+
+=mobile
+  @media screen and (max-width: $tablet - 1px)
+    @content

@@ -6,8 +6,12 @@
 		</div>
 		<div id="l-flex-items-left">
 			<p>content</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat alias voluptatum magnam. Ducimus est, assumenda voluptas
-				tempore perferendis, vitae sequi? Sequi saepe, non vero velit qui temporibus, deleniti alias numquam.</p>
+			<ul class="link1">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Action</a></li>
+				<li><a href="#">Dollar</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
 		</div>
 
 		<div id="l-flex-items-right">
