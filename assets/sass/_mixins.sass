@@ -1,15 +1,23 @@
+// Align items
 =center($value, $value2)
   justify-content: $value
   align-items: $value2
 
+// border
 =border($width, $style, $color)
   border-width: $width
   border-style: $style
   border-color: $color
 
+// Simple gradient
 =gradient($angle, $color, $color1)
   background: linear-gradient($angle, $color, $color1)
 
+=gradient-3($angle, $color, $color1, $color2)
+  linear-gradient($angle, $color, $color1, $color3)
+
+  
+// rounded corners
 =round($px)
   border-radius: $px
 
@@ -20,7 +28,7 @@
         background: mix($y, $x, 100% * $i/$c)
 
 
-/* Media calls */
+// Media calls
 =desktop
   @media screen and (min-width: $desktop)
     @content

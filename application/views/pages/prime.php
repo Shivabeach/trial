@@ -19,9 +19,9 @@
 				<div class="m-card-wrapper--title">Content</div>
 				<div class="m-card-wrapper--info">Date: 7/12/05 </div>
 				<div class="m-card-wrapper--content">
-					<p class="m-card-wrapper--para"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad accusamus voluptate, aspernatur iure non culpa. Sunt impedit
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad accusamus voluptate, aspernatur iure non culpa. Sunt impedit
 						voluptate explicabo cupiditate nulla, ipsa quam debitis, quos, optio mollitia aliquam quibusdam ipsum dolores. </p>
-					<p class="m-card-wrapper--para"> Quis sunt suscipit nemo dignissimos rem dolore corrupti quas ab iure, assumenda earum facilis cumque officiis at ex
+					<p> Quis sunt suscipit nemo dignissimos rem dolore corrupti quas ab iure, assumenda earum facilis cumque officiis at ex
 						non voluptatem laborum molestias, numquam sit temporibus! Voluptatum soluta omnis veniam.
 				</div>
 			</div>

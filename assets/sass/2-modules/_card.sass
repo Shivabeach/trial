@@ -3,6 +3,8 @@
   margin: 20px auto
   background: lighten($almond, 4%)
   box-shadow: 10px 10px 1px darken($almond,4%)
+  border-top: 1px solid darken($almond,4%)
+  border-left: 1px solid darken($almond,4%)
 
   +round(10px)
 
@@ -12,18 +14,17 @@
     padding-left: 10px
 
   &--content
-    font-size: modular-scale(0)
     width: 94%
     margin: 0 auto
+
+    p
+      background: transparent
+
+    p:last-of-type
+      padding-bottom: 15px
 
   &--info
     width: 100%
     line-height: 1
     font-size: modular-scale(-1)
     padding: 5px 10px
-
-  &--para
-    background: transparent
-
-  &--para:last-of-type
-    padding-bottom: 15px

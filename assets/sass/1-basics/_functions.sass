@@ -14,3 +14,9 @@ $grid-max-width: 65em
     min-height: 200px
     padding: 15px 10px
 
+// map example
+$column-width: (first: 210px, second: 200px, third: 100px)
+
+@each $column, $width in $column-width
+  .col-#{$column}
+    width: $width
